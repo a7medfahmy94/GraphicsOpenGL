@@ -128,78 +128,147 @@ void MyGLWidget::mouseMoveEvent(QMouseEvent *event)
 
 void MyGLWidget::draw()
 {
-    qglColor(Qt::red);
-    glBegin(GL_QUADS);
-        glNormal3f(0,0,-1);
-        glVertex3f(-1,-1,0);
-        glVertex3f(-1,1,0);
-        glVertex3f(1,1,0);
-        glVertex3f(1,-1,0);
+    //qglColor(Qt::red);
+    glColor3f(0.5f,0.5f,1.0f); // Set The Color To Blue One Time Only
+//    glBegin(GL_QUADS);
+//        glNormal3f(0,0,-1);
+//        glVertex3f(-1,-1,0);
+//        glVertex3f(-1,1,0);
+//        glVertex3f(1,1,0);
+//        glVertex3f(1,-1,0);
 
-    glEnd();
-   glBegin(GL_TRIANGLES);
-       glNormal3f(0,-1,0.707);
-       glVertex3f(-1,-1,0);
-       glVertex3f(1,-1,0);
-       glVertex3f(0,0,1.2);
-   glEnd();
-   glBegin(GL_TRIANGLES);
-       glNormal3f(1,0, 0.707);
-       glVertex3f(1,-1,0);
-       glVertex3f(1,1,0);
-       glVertex3f(0,0,1.2);
-   glEnd();
-   glBegin(GL_TRIANGLES);
-       glNormal3f(0,1,0.707);
-       glVertex3f(1,1,0);
-       glVertex3f(-1,1,0);
-       glVertex3f(0,0,1.2);
-   glEnd();
-   glBegin(GL_TRIANGLES);
-       glNormal3f(-1,0,0.707);
-       glVertex3f(-1,1,0);
-       glVertex3f(-1,-1,0);
-       glVertex3f(0,0,1.2);
-   glEnd();
-    // glBegin(GL_QUADS);
-    //     glNormal3f(-1.0,0,0);
-    //     glVertex3f(-1,-1,0);
-    //     glVertex3f(-1,1,0);
-    //     glVertex3f(-1,1,1);
-    //     glVertex3f(-1,-1,1);
+//    glEnd();
+//   glBegin(GL_TRIANGLES);
+//       glNormal3f(0,-1,0.707);
+//       glVertex3f(-1,-1,0);
+//       glVertex3f(1,-1,0);
+//       glVertex3f(0,0,1.2);
+//   glEnd();
+//   glBegin(GL_TRIANGLES);
+//       glNormal3f(1,0, 0.707);
+//       glVertex3f(1,-1,0);
+//       glVertex3f(1,1,0);
+//       glVertex3f(0,0,1.2);
+//   glEnd();
+//   glBegin(GL_TRIANGLES);
+//       glNormal3f(0,1,0.707);
+//       glVertex3f(1,1,0);
+//       glVertex3f(-1,1,0);
+//       glVertex3f(0,0,1.2);
+//   glEnd();
+//   glBegin(GL_TRIANGLES);
+//       glNormal3f(-1,0,0.707);
+//       glVertex3f(-1,1,0);
+//       glVertex3f(-1,-1,0);
+//       glVertex3f(0,0,1.2);
+//   glEnd();
+    //floor
+    //floor
+    //floor
+//    glBegin(GL_QUADS);
+//        glNormal3f(0,0,-1);
+//        glVertex3f(-1,-1,0);
+//        glVertex3f(-1,1,0);
+//        glVertex3f(1,1,0);
+//        glVertex3f(1,-1,0);
+//    glEnd();
 
-    // glEnd();
-    // glBegin(GL_QUADS);
-    //     glNormal3f(0,1.0,0);
-    //     glVertex3f(-1,1,0);
-    //     glVertex3f(1,1,0);
-    //     glVertex3f(1,1,1);
-    //     glVertex3f(-1,1,1);
+//    //ceil
+//    glBegin(GL_QUADS);
+//        glNormal3f(0,0,2);
+//        glVertex3f(-1,-1,2);
+//        glVertex3f(-1,1,2);
+//        glVertex3f(1,1,2);
+//        glVertex3f(1,-1,2);
+//    glEnd();
 
-    // glEnd();
-    // glBegin(GL_QUADS);
-    //     glNormal3f(1.0,0,0);
-    //     glVertex3f(1,1,0);
-    //     glVertex3f(1,-1,0);
-    //     glVertex3f(1,-1,1);
-    //     glVertex3f(1,1,1);
+//    //front
+//     glBegin(GL_QUADS);
+//         glNormal3f(1,-2,1);
+//         glVertex3f(-1,-1,0);
+//         glVertex3f(1,-1,0);
+//         glVertex3f(1,-1,2);
+//         glVertex3f(-1,-1,2);
+//     glEnd();
 
-    // glEnd();
-    // glBegin(GL_QUADS);
-    //     glNormal3f(0,-1.0,0);
-    //     glVertex3f(1,-1,0);
-    //     glVertex3f(-1,-1,0);
-    //     glVertex3f(-1,-1,1);
-    //     glVertex3f(1,-1,1);
+//    //back
+//    glBegin(GL_QUADS);
+//         glNormal3f(1,2,2);
+//         glVertex3f(-1,1,0);
+//         glVertex3f(1,1,0);
+//         glVertex3f(1,1,2);
+//         glVertex3f(-1,1,2);
+//     glEnd();
 
-    // glEnd();
-    // glBegin(GL_QUADS);
-    //     glNormal3f(0,0,1.0);
-    //     glVertex3f(-1,-1,1);
-    //     glVertex3f(-1,1,1);
-    //     glVertex3f(1,1,1);
-    //     glVertex3f(1,-1,1);
+//    //left
+//     glBegin(GL_QUADS);
+//         glNormal3f(-2,1,2);
+//         glVertex3f(-1,-1,0);
+//         glVertex3f(-1,1,0);
+//         glVertex3f(-1,1,2);
+//         glVertex3f(-1,-1,2);
 
-    // glEnd();
+//     glEnd();
+
+
+//     //right
+//     glBegin(GL_QUADS);
+//         glNormal3f(2,0,0);
+//         glVertex3f(1,-1,0);
+//         glVertex3f(1,1,0);
+//         glVertex3f(1,1,2);
+//         glVertex3f(1,-1,2);
+
+//     glEnd();
+
+
+    glBegin(GL_QUADS);                // Begin drawing the color cube with 6 quads
+       // Top face (y = 1.0f)
+       // Define vertices in counter-clockwise (CCW) order with normal pointing out
+       glColor3f(0.0f, 1.0f, 0.0f);     // Green
+       glVertex3f( 1.0f, 1.0f, -1.0f);
+       glVertex3f(-1.0f, 1.0f, -1.0f);
+       glVertex3f(-1.0f, 1.0f,  1.0f);
+       glVertex3f( 1.0f, 1.0f,  1.0f);
+
+       // Bottom face (y = -1.0f)
+       glColor3f(1.0f, 0.5f, 0.0f);     // Orange
+       glVertex3f( 1.0f, -1.0f,  1.0f);
+       glVertex3f(-1.0f, -1.0f,  1.0f);
+       glVertex3f(-1.0f, -1.0f, -1.0f);
+       glVertex3f( 1.0f, -1.0f, -1.0f);
+
+       // Front face  (z = 1.0f)
+       glColor3f(1.0f, 0.0f, 0.0f);     // Red
+       glVertex3f( 1.0f,  1.0f, 1.0f);
+       glVertex3f(-1.0f,  1.0f, 1.0f);
+       glVertex3f(-1.0f, -1.0f, 1.0f);
+       glVertex3f( 1.0f, -1.0f, 1.0f);
+
+       // Back face (z = -1.0f)
+       glColor3f(1.0f, 1.0f, 0.0f);     // Yellow
+       glVertex3f( 1.0f, -1.0f, -1.0f);
+       glVertex3f(-1.0f, -1.0f, -1.0f);
+       glVertex3f(-1.0f,  1.0f, -1.0f);
+       glVertex3f( 1.0f,  1.0f, -1.0f);
+
+       // Left face (x = -1.0f)
+       glColor3f(0.0f, 0.0f, 1.0f);     // Blue
+       glVertex3f(-1.0f,  1.0f,  1.0f);
+       glVertex3f(-1.0f,  1.0f, -1.0f);
+       glVertex3f(-1.0f, -1.0f, -1.0f);
+       glVertex3f(-1.0f, -1.0f,  1.0f);
+
+       // Right face (x = 1.0f)
+       glColor3f(1.0f, 0.0f, 1.0f);     // Magenta
+       glVertex3f(1.0f,  1.0f, -1.0f);
+       glVertex3f(1.0f,  1.0f,  1.0f);
+       glVertex3f(1.0f, -1.0f,  1.0f);
+       glVertex3f(1.0f, -1.0f, -1.0f);
+    glEnd();  // End of drawing color-cube
+
+    // Render a pyramid consists of 4 triangles
+    glLoadIdentity();                  // Reset the model-view matrix
+    glTranslatef(-1.5f, 0.0f, -6.0f);  //
 
 }
